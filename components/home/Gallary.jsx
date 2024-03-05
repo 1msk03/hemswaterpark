@@ -10,11 +10,12 @@ import Image from 'next/image'
 const Gallary = () => {
   return (
     <div className='py-20'>
+       
    <div className='container mx-auto'>
 
     <div className='flex  flex-col justify-center items-center gap-4 pb-10 '>
-<p className='text-[16px] font-Fjalla font-medium tracking-wide text-primary ' >OUR GALLERY</p>
-<h2 className='text-[32px] font-Fjalla text-secondary font-bold tracking-wide'>CAPTURED MOMENTS IN WATERBOOM</h2>
+<p className='text-[22px] font-Fjalla font-medium tracking-wide text-heading ' >OUR GALLERY</p>
+<h2 className='text-[60px] font-Fjalla text-primary font-bold tracking-wide'>CAPTURED MOMENTS IN WATERBOOM</h2>
 <p className='text-center text-[16px] font-Fjalla text-body font-normal tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
     </div>
 <div className='grid md:grid-cols-3 gap-4 '>

@@ -9,10 +9,10 @@ const Holiday = () => {
     <div className='bg-secondary py-28'>
       <div className='container mx-auto'>
         <div className='flex justify-center items-center w-full gap-10'>
-            <div className='w-1/2'>
+            <div className='w-1/2 hidden lg:flex'>
                 <BookForm/>
             </div>
-            <div className='w-1/2'>
+            <div className='lg:w-1/2 w-full'>
                <div className='flex flex-col gap-3'>
                <span className='text-[16px] font-Fjalla font-medium tracking-wide text-primary'>BOOK NOW</span>
              <h2 className='text-[32px] text-white font-Fjalla font-bold'>SPEND YOUR HOLIDAY</h2>
@@ -40,7 +40,7 @@ const Holiday = () => {
        </div>
                </div>
 
-<div className='flex justify-between items-center mt-6'>
+<div className='flex flex-col md:flex-row justify-between md:items-center items-start mt-6'>
     <div className='flex justify-start items-center gap-5'>
         <span ><IoMailOutline className='text-[40px] font-bold text-primary'/></span>
         <div className='flex flex-col gap-2'>

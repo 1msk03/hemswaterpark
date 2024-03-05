@@ -14,12 +14,13 @@ module.exports = {
           sm: '2rem',
           lg: '3rem',
           xl: '4rem',
-        },
+        },  
       },
       colors: {
-        primary: "#11c5dd",
-        secondary: "#01173c",
-        body: "#7d8f9e"
+        primary: "#2596be",
+        secondary: "#5ce1e6",
+        heading: "#01173c",
+        body: "#7d8f9e",
       },
       fontFamily: {
         Fjalla: ['Fjalla One', 'sans-serif'],

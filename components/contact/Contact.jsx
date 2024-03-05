@@ -8,14 +8,14 @@ const Contact = () => {
   return (
     <div className='bg-[#F2FDFF] py-28'>
    <div className='container mx-auto'>
-    <div className='flex gap-10 justify-center items-center'>
-        <div className='w-1/2 '>
+    <div className='flex flex-col lg:flex-row gap-10 justify-center items-center'>
+        <div className='lg:w-1/2 w-full '>
         <div className='  flex flex-col justify-start items-start gap-5 '>
              <span className='text-[16px] font-Fjalla font-medium tracking-wider text-primary'>GET IN TOUCH</span>
              <h2 className='text-[32px] text-secondary font-Fjalla font-bold'>CONTACT US TO GET BETTER INFORMATION</h2>
              <p className='text-[16px] text-body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori</p>
              </div>
-             <div className='flex justify-between items-center py-10 border-b-2'>
+             <div className='flex flex-col lg:flex-row justify-between lg:items-center items-start gap-4 lg:gap-0 py-10 border-b-2'>
                 <div className='flex justify-center items-center gap-3'>
                     <span className='p-4 bg-primary'><GrMapLocation className='text-[30px] font-bold text-white'/></span>
                     <div className='flex flex-col gap-2'>
@@ -33,7 +33,7 @@ Drop Us a Line</p>
                 </div>
 
              </div>
-             <div className='flex gap-6 justify-start items-center pt-10 '>
+             <div className='flex flex-col md:flex-row gap-6 justify-start items-center pt-10 '>
               <h3 className='text-secondary text-[20px] font-bold tracking-wide'>Official Social Media :
 </h3>
 <ul className='flex justify-start items-center gap-3  '>
@@ -45,7 +45,7 @@ Drop Us a Line</p>
             </ul>
              </div>
         </div>
-        <div className='w-1/2 '>
+        <div className='lg:w-1/2 w-full '>
         <form className='flex bg-white  flex-col justify-start  gap-5 p-10'>
             <div>
               <input type='text' placeholder='Your Name*'  className='p-4 w-full outline-none border'/>
