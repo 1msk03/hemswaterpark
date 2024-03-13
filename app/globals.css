@@ -20,12 +20,21 @@
   section {
     position: relative;
     width: 100%;
-  
-    background: #2596be;
+    height: 100vh;
     display: flex;
-justify-content: center;
-align-items: center;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+  }
+
+  section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
   section .wave {
     position: absolute;
@@ -201,3 +210,120 @@ align-items: center;
   .plan .button:hover, .plan .button:focus {
     background-color: #4133B7;
   }
+
+  .button {
+    text-decoration: none;
+    line-height: 1;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.05);
+    background-color: #fff;
+    color: #121212;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button-decor {
+    position: absolute;
+    inset: 0;
+    background-color: var(--clr);
+    transform: translateX(-100%);
+    transition: transform .3s;
+    z-index: 0;
+  }
+  
+  .button-content {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .button__icon {
+    width: 48px;
+    height: 40px;
+    background-color: var(--clr);
+    display: grid;
+    place-items: center;
+  }
+  
+  .button__text {
+    display: inline-block;
+    transition: color .2s;
+    padding: 2px 1.5rem 2px;
+    padding-left: .75rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+  
+  .button:hover .button__text {
+    color: #fff;
+  }
+  
+  .button:hover .button-decor {
+    transform: translate(0);
+  }
+
+  footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+   margin-top: 100px;
+  
+  }
+
+  footer .wavess {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background:  url('/wave1.png');
+    background-size: 1000px 100px;
+  }
+
+  footer .wavess#waves1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+  }
+  footer .wavess#waves2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave2 4s linear infinite;
+  }
+  footer .wavess#waves3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave1 3s linear infinite;
+  }
+  footer .wavess#waves4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave2 3s linear infinite;
+  }
+
+  @keyframes animateWave {
+    0% {
+      background-position-x: 1000px;
+    }
+   100% {
+    background-position-x: 0;
+  }
+}
+@keyframes animateWave2 {
+  0% {
+    background-position-x: 0;
+  }
+ 100% {
+  background-position-x: 1000px;
+}
+}

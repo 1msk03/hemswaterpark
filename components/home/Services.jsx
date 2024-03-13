@@ -14,7 +14,12 @@ const Services = () => {
 
     <div className='py-20'>
       <div className='container mx-auto'>
-    <div className='flex flex-col lg:flex-row gap-16 w-full'>
+        <div className='flex flex-col justify-center items-center gap-3'>
+        <p className='text-[16px] text-center font-Fjalla font-medium tracking-wide capitalize text-heading'>What We’re Offering</p>
+             <h2 className='text-[32px] text-center text-primary font-Fjalla font-bold'>Fun Never Stops
+at  HemsWaterPark</h2>
+        </div>
+    <div className='flex flex-col lg:flex-row gap-16 pt-8 w-full'>
       <div className='lg:w-1/2 w-full '>
         
        <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>

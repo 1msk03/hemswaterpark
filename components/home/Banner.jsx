@@ -1,26 +1,28 @@
 import React from 'react'
-import Banner1 from "../../public/banner1.jpg"
+import Banner1 from "../../public/banner.jpg"
 import Link from 'next/link'
-import Counter from './Counter'
+
 const Banner = () => {
   return (
-    <div  className=" relative bg-cover bg-center lg:h-[400px] h-full lg:mb-20 mb-0" style={{ backgroundImage: `url(${Banner1.src})` }}>
-     <div className='container mx-auto'>
-        <div className='flex flex-col lg:flex-row gap-y-6 justify-between items-center lg:pt-28 py-20'>
-<div className='flex flex-col lg:justify-start items-center justify-center lg:items-start gap-3 lg:w-1/2 w-full'> 
-               <h2 className='text-white text-[32px] text-center lg:text-start font-Fjalla font-bold tracking-wide'>SPEND YOUR HOLIDAY IN WATERBOOM</h2>
-            <p className='text-[16px] text-white text-center lg:text-start'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div  className='container mx-auto'>
+       <div  className=" relative  bg-cover bg-center lg:h-[500px] h-full lg:mb-20 mb-0" style={{ backgroundImage: `url(${Banner1.src})`, backgroundSize: 'cover' , backgroundPosition: 'center'}}>
+     <div className='bg-[rgba(20,20,20,0.27)] h-full flex justify-center items-center'>
+        <div className='flex flex-col  gap-y-6 justify-between items-center py-20 px-10 '>
+<div className='flex flex-col items-center justify-center  gap-3  w-full'> 
+               <h2 className='text-white md:text-[60px] text-[32px] text-center lg:text-start font-Fjalla font-bold tracking-wide'>SPEND YOUR HOLIDAY IN Hemswaterpark</h2>
+
             </div>
-            <div className='flex flex-col justify-start items-start  gap-6'>
-            <button className='bg-primary text-white px-6 py-3 text-[16px] font-bold tracking-wide'>BOOK NOW</button>
-            <Link href={'/'} className='text-[16px] font-Fjalla font-bold tracking-wide text-white'>
-GET INFORMATION</Link>
+            <div className='flex flex-col   gap-6'>
+            <button className='bg-white text-primary px-6 py-3 text-[16px] font-bold tracking-wide'>BOOK NOW</button>
+           
             </div>
         </div>
-        <Counter/>
+       
         
      </div>
     </div>
+    </div>
+   
   )
 }
 

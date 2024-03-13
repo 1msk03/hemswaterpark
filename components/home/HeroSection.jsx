@@ -1,9 +1,6 @@
 "use client"
 import Slider from "react-slick";
-import Slider1 from "../../public/slider.jpg"
-import Slider2 from "../../public/hero1.png"
-import Slider3 from "../../public/hero2.png"
-import Slider4 from "../../public/hero3.png"
+
 
 import { FaPlay } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
@@ -30,8 +27,8 @@ const HeroSection = () => {
       <div className='wave wave2'></div>
       <div className='wave wave3'></div>
       <div className='wave wave4'></div>
-        <div  className={`  flex items-center justify-center pb-20 `}>
-      <div className='bg-[hsla(12,38%,51%,0)] h-full w-full'>
+        <div  className={`  flex items-center justify-center pb-20  `}>
+      {/* <div className='bg-[hsla(12,38%,51%,0)] h-full w-full'>
   
       <div className='container h-full mx-auto'>
         <div className='flex flex-col lg:flex-row justify-center  items-center  gap-10'>
@@ -64,8 +61,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      </div>
-   
+      </div> */}
+    <img src="/hero1.png" alt="Hero Background"></img>
     </div>
     </section>
   </div>

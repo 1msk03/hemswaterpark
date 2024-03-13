@@ -12,55 +12,59 @@ const Blog = () => {
     <div className=' bg-slate-50 py-20'>
       <div className='container mx-auto'>
       <div className='flex  flex-col justify-center items-center gap-4 pb-10 '>
-<span className='text-[16px] font-Fjalla font-medium tracking-wide text-primary ' >OUR BLOG</span>
-<h2 className='text-[32px] font-Fjalla text-secondary font-bold tracking-wide'>LATEST BLOG & ARTICLES</h2>
+<span className='text-[16px] font-Fjalla font-medium tracking-wide text-heading ' >OUR BLOG</span>
+<h2 className='text-[32px] font-Fjalla text-primary font-bold tracking-wide'>LATEST BLOG & ARTICLES</h2>
 <p className='text-center text-[16px]  text-body font-normal tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
     </div>
-    <div className='grid grid-cols-1 lg:grid-cols-1 gap-5'>
-      <div className='flex bg-white p-5 flex-col md:flex-row gap-5'>
-        <div>
-          <Image src={Blog1} className='w-[300px]   object-cover'/>
-        </div>
-        <div className='flex flex-col gap-1 justify-start items-start'>
-          <h5 className='text-[18px] font-medium tracking-wide font-Fjalla text-secondary'>Why Children Dont Like Getting Out Of The Water</h5>
-          <span className='flex justify-start items-center gap-2 text-body text-[16px] font-Fjalla tracking-wide font-normal'><IoTime/><p>August 10, 2021</p></span>
-          <p className='text-[16px] text-body  tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-          <Link href={'/'} className='text-primary font-bold font-Fjalla text-[14px] tracking-wide'>READ MORE</Link>
-        </div>
-      </div>
-      <div className='flex  flex-col md:flex-row bg-white p-5   gap-5'>
-        <div>
-          <Image src={Blog2} className='w-[300px]  object-cover'/>
-        </div>
-        <div className='flex flex-col gap-1 justify-start items-start'>
-          <h5 className='text-[18px] font-medium tracking-wide font-Fjalla text-secondary'>5 Reasons To Escape The Cold Weather This Season</h5>
-          <span className='flex justify-start items-center gap-2 text-body text-[16px] font-Fjalla tracking-wide font-normal'><IoTime/><p>August 5, 2021</p></span>
-          <p className='text-[16px] text-body  tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-          <Link href={'/'} className='text-primary font-bold font-Fjalla text-[14px] tracking-wide'>READ MORE</Link>
-        </div>
-      </div>
-      <div className='flex flex-col md:flex-row bg-white p-5   gap-5'>
-        <div className='justify-center items-center'>
-          <Image src={Blog3} className='w-[300px]   object-cover'/>
-        </div>
-        <div className='flex flex-col gap-1 justify-start items-start'>
-          <h5 className='text-[18px] font-medium tracking-wide font-Fjalla text-secondary'>5 Ways To Enjoy Waterboom This Spring Break</h5>
-          <span className='flex justify-start items-center gap-2 text-body text-[16px] font-Fjalla tracking-wide font-normal'><IoTime/><p>August 10, 2021</p></span>
-          <p className='text-[16px] text-body  tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-          <Link href={'/'} className='text-primary font-bold font-Fjalla text-[14px] tracking-wide'>READ MORE</Link>
-        </div>
-      </div>
-      <div className='flex flex-col md:flex-row bg-white p-5   gap-5'>
-        <div>
-          <Image src={Blog4} className='w-[300px]    object-cover'/>
-        </div>
-        <div className='flex flex-col gap-1 justify-start items-start'>
-          <h5 className='text-[18px] font-medium tracking-wide font-Fjalla text-secondary'>4 Things You Must Do To Save Money While Planning A Vacation</h5>
-          <span className='flex justify-start items-center gap-2 text-body text-[16px] font-Fjalla tracking-wide font-normal'><IoTime/><p>August 5, 2021</p></span>
-          <p className='text-[16px] text-body  tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-          <Link href={'/'} className='text-primary font-bold font-Fjalla text-[14px] tracking-wide'>READ MORE</Link>
-        </div>
-      </div>
+    <div className='grid grid-cols-1 lg:grid-cols-4 gap-5'>
+    <div className='flex flex-col justify-center items-center bg-white p-3 gap-5'>
+  <div>
+    <Image src={Blog4} className='w-[300px] object-cover' />
+  </div>
+  <div className='flex flex-col gap-1 justify-start items-start mt-auto'>
+    <h5 className='text-[20px] font-medium tracking-wide font-Fjalla text-heading'>Why Children Don't Like Getting Out Of The Water</h5>
+    <span className='flex justify-start items-center gap-2 text-body text-[16px] font-Fjalla tracking-wide font-normal'><IoTime /><p>August 5, 2021</p></span>
+    <p className='text-[16px] text-body tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+  </div>
+  <div className='flex-grow'></div> {/* This div will take up remaining space */}
+  <Link href={'/'} className='text-primary font-bold font-Fjalla text-[14px] tracking-wide self-end'>READ MORE</Link>
+</div>
+      <div className='flex flex-col justify-center items-center bg-white p-3 gap-5'>
+  <div>
+    <Image src={Blog4} className='w-[300px] object-cover' />
+  </div>
+  <div className='flex flex-col gap-1 justify-start items-start mt-auto'>
+    <h5 className='text-[20px] font-medium tracking-wide font-Fjalla text-heading'>Why Children Don't Like Getting Out Of The Water</h5>
+    <span className='flex justify-start items-center gap-2 text-body text-[16px] font-Fjalla tracking-wide font-normal'><IoTime /><p>August 5, 2021</p></span>
+    <p className='text-[16px] text-body tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+  </div>
+  <div className='flex-grow'></div> {/* This div will take up remaining space */}
+  <Link href={'/'} className='text-primary font-bold font-Fjalla text-[14px] tracking-wide self-end'>READ MORE</Link>
+</div>
+<div className='flex flex-col justify-center items-center bg-white p-3 gap-5'>
+  <div>
+    <Image src={Blog4} className='w-[300px] object-cover' />
+  </div>
+  <div className='flex flex-col gap-1 justify-start items-start mt-auto'>
+    <h5 className='text-[20px] font-medium tracking-wide font-Fjalla text-heading'>Why Children Don't Like Getting Out Of The Water</h5>
+    <span className='flex justify-start items-center gap-2 text-body text-[16px] font-Fjalla tracking-wide font-normal'><IoTime /><p>August 5, 2021</p></span>
+    <p className='text-[16px] text-body tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+  </div>
+  <div className='flex-grow'></div> {/* This div will take up remaining space */}
+  <Link href={'/'} className='text-primary font-bold font-Fjalla text-[14px] tracking-wide self-end'>READ MORE</Link>
+</div>
+      <div className='flex flex-col justify-center items-center bg-white p-3 gap-5'>
+  <div>
+    <Image src={Blog4} className='w-[300px] object-cover' />
+  </div>
+  <div className='flex flex-col gap-1 justify-start items-start mt-auto'>
+    <h5 className='text-[20px] font-medium tracking-wide font-Fjalla text-heading'>Why Children Don't Like Getting Out Of The Water</h5>
+    <span className='flex justify-start items-center gap-2 text-body text-[16px] font-Fjalla tracking-wide font-normal'><IoTime /><p>August 5, 2021</p></span>
+    <p className='text-[16px] text-body tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+  </div>
+  <div className='flex-grow'></div> {/* This div will take up remaining space */}
+  <Link href={'/'} className='text-primary font-bold font-Fjalla text-[14px] tracking-wide self-end'>READ MORE</Link>
+</div>
     </div>
       </div>
     </div>

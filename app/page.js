@@ -5,9 +5,10 @@ import Newsletter from "@/components/home/Newsletter";
 import Image from "next/image";
 import Ticket from "../components/home/Ticket";
 import Blog from "@/components/home/Blog";
-import Banner from "@/components/home/Banner";
+
 import Services from "@/components/home/Services";
 import Wave from "@/components/home/Wave";
+import Banner from "@/components/home/Banner";
 
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
 <Services/>
 <Ticket/>
 <Gallary/>
-{/* <Banner/> */}
+<Banner/>
 
 <Blog/>
 {/* <Newsletter/> */}

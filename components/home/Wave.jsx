@@ -12,7 +12,7 @@ const Wave = () => {
           <h5 className="text-heading text-[22px] font-Fjalla font-medium tracking-wide">
             Welcome to
           </h5>
-          <h3 className="text-[60px] font-Fjalla font-bold  text-primary tracking-wide">
+          <h3 className="lg:text-[60px] text-[30px]  text-center font-Fjalla font-bold  text-primary tracking-wide">
             THE PLACE OF ENJOYMENT
           </h3>
         </div>

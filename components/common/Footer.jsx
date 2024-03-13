@@ -9,12 +9,21 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='bg-primary'>
-   <div className='container mx-auto'>
+   
+
+<>
+<footer>
+    <div className=''>
+        <div className='wavess' id='waves1'></div>
+        <div className='wavess' id='waves2'></div>
+        <div className='wavess' id='waves3'></div>
+        <div className='wavess' id='waves4'></div>
+    </div>
+    <div className='container mx-auto'>
     <div className='flex flex-col lg:flex-row w-full justify-between items-start gap-10 pt-14 pb-8 '>
         <div className='flex lg:w-[35%] w-full flex-1 flex-col justify-center items-start gap-3'>
             <div>
-                <Image src={Logo}  alt='' className=' h-20 w-20 object-contain'/>
+                <Image src={Logo}  alt='' className=' h-24 w-36 object-cover'/>
             </div>
             <h1 className="text-[14px] text-white font-medium tracking-wider">Lorem ipsum dolor sit amet,</h1>
            <div className='flex flex-col gap-2 justify-start items-start'>
@@ -36,11 +45,11 @@ const Footer = () => {
         <div className='lg:w-[15%] w-full flex  flex-col justify-center items-start gap-3'>
             <h4 className='text-[22px] font-medium  text-white font-Fjalla'>Quick Links</h4>
             <ul className='flex flex-col justify-center items-start gap-2'>
-                <Link href={'/about'} className='text-[16px] text-white hover:text-primary duration-500 font-heebo tracking-wide font-medium'>About Us</Link>
-                <Link href={'/services'} className='text-[16px] text-white hover:text-primary duration-500 font-heebo tracking-wide font-medium'>Services</Link>
-                <Link href={'/booking'} className='text-[16px] text-white hover:text-primary duration-500 font-heebo tracking-wide font-medium'>Booking</Link>
-                <Link href={'/blog'} className='text-[16px] text-white hover:text-primary duration-500 font-heebo tracking-wide font-medium'>Packages</Link>
-                <Link href={'/contact'} className='text-[16px] text-white hover:text-primary duration-500 font-heebo tracking-wide font-medium'>Contact</Link>
+                <Link href={'/about'} className='text-[16px] text-white hover:text-heading duration-500 font-heebo tracking-wide font-medium'>About Us</Link>
+                <Link href={'/services'} className='text-[16px] text-white hover:text-heading duration-500 font-heebo tracking-wide font-medium'>Services</Link>
+                <Link href={'/booking'} className='text-[16px] text-white hover:text-heading duration-500 font-heebo tracking-wide font-medium'>Booking</Link>
+                <Link href={'/blog'} className='text-[16px] text-white hover:text-heading duration-500 font-heebo tracking-wide font-medium'>Packages</Link>
+                <Link href={'/contact'} className='text-[16px] text-white hover:text-heading duration-500 font-heebo tracking-wide font-medium'>Contact</Link>
 
 
             </ul>
@@ -48,11 +57,11 @@ const Footer = () => {
         <div className='flex lg:w-[15%] w-full  flex-col justify-center items-start gap-3'>
             <h4 className='text-[22px] font-medium  text-white font-Fjalla'>Useful Links</h4>
             <ul className='flex flex-col justify-center items-start gap-2'>
-                <Link href={`/`} className='text-[16px] text-white hover:text-primary duration-500 font-heebo tracking-wide font-medium'>Privacy Policy</Link>
-                <Link href={`/`} className='text-[16px] text-white hover:text-primary duration-500 font-heebo tracking-wide font-medium'>Terms and Conditions</Link>
-                <Link href={`/`} className='text-[16px] text-white hover:text-primary duration-500 font-heebo tracking-wide font-medium'>Disclaimer</Link>
-                <Link href={`/`} className='text-[16px] text-white hover:text-primary duration-500 font-heebo tracking-wide font-medium'>Support</Link>
-                <Link href={`/`} className='text-[16px] text-white hover:text-primary duration-500 font-heebo tracking-wide font-medium'>FAQ</Link>
+                <Link href={`/`} className='text-[16px] text-white hover:text-heading duration-500 font-heebo tracking-wide font-medium'>Privacy Policy</Link>
+                <Link href={`/`} className='text-[16px] text-white hover:text-heading duration-500 font-heebo tracking-wide font-medium'>Terms and Conditions</Link>
+                <Link href={`/`} className='text-[16px] text-white hover:text-heading duration-500 font-heebo tracking-wide font-medium'>Disclaimer</Link>
+                <Link href={`/`} className='text-[16px] text-white hover:text-heading duration-500 font-heebo tracking-wide font-medium'>Support</Link>
+                <Link href={`/`} className='text-[16px] text-white hover:text-heading duration-500 font-heebo tracking-wide font-medium'>FAQ</Link>
 
 
             </ul>
@@ -61,14 +70,14 @@ const Footer = () => {
             <h4 className='text-[24px] font-medium text-white'>Opening Hours</h4>
           <div className='flex xl:flex-row flex-row lg:flex-col justify-center items-start gap-5'>
            <div className='flex flex-col gap-3'>
-           <p>Monday - Friday</p>
-            <p>Saturday - Sunday</p>
-            <p>Holiday</p>
+           <p  className='md:text-[16px] text-[14px]'>Monday - Friday</p>
+            <p className='md:text-[16px] text-[14px]' >Saturday - Sunday</p>
+            <p  className='md:text-[16px] text-[14px]'>Holiday</p>
            </div>
            <div className='flex flex-col gap-3'>
-           <div className='flex justify-center items-center gap-3'><IoTime/>   <p>11:00 AM - 16:00 PM</p></div>
-           <div className='flex justify-center items-center gap-3'><IoTime/>   <p>09:00 AM - 17:00 PM</p></div>
-           <div className='flex justify-center items-center gap-3'><IoTime/>   <p>09:00 AM - 17:00 PM</p></div>
+           <div className='flex justify-center items-center gap-3'><IoTime/>   <p className='md:text-[16px] text-[14px]'>11:00 AM - 16:00 PM</p></div>
+           <div className='flex justify-center items-center gap-3'><IoTime/>   <p className='md:text-[16px] text-[14px]'>09:00 AM - 17:00 PM</p></div>
+           <div className='flex justify-center items-center gap-3'><IoTime/>   <p className='md:text-[16px] text-[14px]'>09:00 AM - 17:00 PM</p></div>
            </div>
            
          
@@ -93,7 +102,8 @@ const Footer = () => {
  </div>
 
    </div>
-    </div>
+</footer>
+</>
   )
 }
 

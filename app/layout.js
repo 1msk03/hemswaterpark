@@ -2,6 +2,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
+import TopNav from "@/components/common/TopNav";
+import Social from "@/components/common/Social";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +24,9 @@ export default function RootLayout({ children }) {
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet"/>
       </head>
       <body className={inter.className}>
+        <TopNav/>
         <Header/>
+        <Social/>
         {children}
         <Footer/>
         </body>
