@@ -22,7 +22,7 @@ const Blog = () => {
     <Image src={Blog4} className='w-[300px] object-cover' />
   </div>
   <div className='flex flex-col gap-1 justify-start items-start mt-auto'>
-    <h5 className='text-[20px] font-medium tracking-wide font-Fjalla text-heading'>Why Children Don't Like Getting Out Of The Water</h5>
+    <h5 className='text-[20px] font-medium tracking-wide font-Fjalla text-heading'>Why Children Do not Like Getting Out Of The Water</h5>
     <span className='flex justify-start items-center gap-2 text-body text-[16px] font-Fjalla tracking-wide font-normal'><IoTime /><p>August 5, 2021</p></span>
     <p className='text-[16px] text-body tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
   </div>
@@ -34,7 +34,7 @@ const Blog = () => {
     <Image src={Blog4} className='w-[300px] object-cover' />
   </div>
   <div className='flex flex-col gap-1 justify-start items-start mt-auto'>
-    <h5 className='text-[20px] font-medium tracking-wide font-Fjalla text-heading'>Why Children Don't Like Getting Out Of The Water</h5>
+    <h5 className='text-[20px] font-medium tracking-wide font-Fjalla text-heading'>Why Children Do not Like Getting Out Of The Water</h5>
     <span className='flex justify-start items-center gap-2 text-body text-[16px] font-Fjalla tracking-wide font-normal'><IoTime /><p>August 5, 2021</p></span>
     <p className='text-[16px] text-body tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
   </div>
@@ -46,7 +46,7 @@ const Blog = () => {
     <Image src={Blog4} className='w-[300px] object-cover' />
   </div>
   <div className='flex flex-col gap-1 justify-start items-start mt-auto'>
-    <h5 className='text-[20px] font-medium tracking-wide font-Fjalla text-heading'>Why Children Don't Like Getting Out Of The Water</h5>
+    <h5 className='text-[20px] font-medium tracking-wide font-Fjalla text-heading'>Why Children Do not Like Getting Out Of The Water</h5>
     <span className='flex justify-start items-center gap-2 text-body text-[16px] font-Fjalla tracking-wide font-normal'><IoTime /><p>August 5, 2021</p></span>
     <p className='text-[16px] text-body tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
   </div>
@@ -58,7 +58,7 @@ const Blog = () => {
     <Image src={Blog4} className='w-[300px] object-cover' />
   </div>
   <div className='flex flex-col gap-1 justify-start items-start mt-auto'>
-    <h5 className='text-[20px] font-medium tracking-wide font-Fjalla text-heading'>Why Children Don't Like Getting Out Of The Water</h5>
+    <h5 className='text-[20px] font-medium tracking-wide font-Fjalla text-heading'>Why Children Do not Like Getting Out Of The Water</h5>
     <span className='flex justify-start items-center gap-2 text-body text-[16px] font-Fjalla tracking-wide font-normal'><IoTime /><p>August 5, 2021</p></span>
     <p className='text-[16px] text-body tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
   </div>
