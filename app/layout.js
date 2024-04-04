@@ -1,11 +1,12 @@
-import { Inter } from "next/font/google";
+
 import "./globals.css";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import TopNav from "@/components/common/TopNav";
 import Social from "@/components/common/Social";
 
-const inter = Inter({ subsets: ["latin"] });
+
+
 
 export const metadata = {
   title: "HemsWaterPark",
@@ -16,20 +17,24 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fjalla+One&display=swap" rel="stylesheet"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet"/>
+        <div>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+            rel="stylesheet"
+          />
+        </div>
       </head>
-      <body className={inter.className}>
-        <TopNav/>
-        <Header/>
-        <Social/>
+      <body className="font-Roboto bg-slate-100">
+        <TopNav />
+        <Header />
+        {/* <Social /> */}
         {children}
-        <Footer/>
-        </body>
+     
+        <Footer />
+      </body>
     </html>
   );
 }

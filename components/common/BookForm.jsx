@@ -3,7 +3,7 @@ import React from 'react'
 const BookForm = () => {
   return (
     <div>
-       <form className='flex bg-[rgba(255,255,255,0.37)]  w-[500px] flex-col justify-start  gap-5 p-10'>
+       <form className='flex bg-[rgba(113,248,237,0.37)]  w-[500px] flex-col justify-start  gap-5 p-10'>
             <div>
               <input type='text' placeholder='Your Name*'  className='p-4 w-full outline-none'/>
             </div>

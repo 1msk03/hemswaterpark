@@ -14,14 +14,14 @@ const Team = () => {
 <p className='text-center text-[16px] font-heebo text-body font-normal tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10'>
 <div>
-    <Image src={Team1} className='object-contain'/>
+    <Image src={Team1} alt='' className='object-contain'/>
 </div>
 
 <div>
-    <Image src={Team2} className=' object-contain'/>
+    <Image src={Team2} alt='' className=' object-contain'/>
 </div>
 <div>
-    <Image src={Team3} className=' object-contain'/>
+    <Image src={Team3} alt='' className=' object-contain'/>
 </div>
 </div>
     </div >

@@ -6,6 +6,7 @@ import { FaPlay } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
+import HeroImage from '../../public//hero1.png'
 
 
 const HeroSection = () => {
@@ -22,12 +23,12 @@ const HeroSection = () => {
  
   return (
     <div>
-    <section className="py-20">
-        <div className='wave wave1'></div>
+    <section className="">
+        {/* <div className='wave wave1'></div>
       <div className='wave wave2'></div>
       <div className='wave wave3'></div>
-      <div className='wave wave4'></div>
-        <div  className={`  flex items-center justify-center pb-20  `}>
+      <div className='wave wave4'></div> */}
+        <div  className={`  flex items-center justify-center   `}>
       {/* <div className='bg-[hsla(12,38%,51%,0)] h-full w-full'>
   
       <div className='container h-full mx-auto'>
@@ -62,7 +63,7 @@ const HeroSection = () => {
         </div>
       </div>
       </div> */}
-    <img src="/hero1.png" alt="Hero Background"></img>
+    <Image src={HeroImage} alt="Hero Background" className="w-full h-full object-contain"/>
     </div>
     </section>
   </div>

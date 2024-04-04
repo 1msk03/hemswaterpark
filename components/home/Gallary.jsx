@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 const Gallary = () => {
   return (
-    <div className='py-20'>
+    <div className='pt-20'>
        
    <div className='container mx-auto'>
 
@@ -21,27 +21,27 @@ const Gallary = () => {
 <div className='grid md:grid-cols-3 gap-4 '>
 <div className='flex flex-col gap-4'>
   <div>
-  <Image src={Gallary1}/>
+  <Image src={Gallary1} alt=''/>
   </div>
   <div>
-  <Image src={Gallary2}/>
+  <Image src={Gallary2} alt=''/>
   </div>
 </div>
 <div className='flex flex-col gap-4'>
 <div>
-  <Image src={Gallary3}/>
+  <Image src={Gallary3} alt=''/>
   </div>
   <div>
-  <Image src={Gallary4}/>
+  <Image src={Gallary4} alt=''/>
   </div>
 
 </div>
 <div className='flex flex-col gap-4'>
 <div>
-  <Image src={Gallary5}/>
+  <Image src={Gallary5} alt=''/>
   </div>
   <div>
-  <Image src={Gallary6}/>
+  <Image src={Gallary6} alt=''/>
   </div>
 
 </div>

@@ -9,9 +9,12 @@ export default function Page(){
     return (
         <>
         <BookingPage/>
-        <Terms/>
         <Holiday/>
-        <Gallary/>
+        <Terms/>
+  
+   
+     {/* <Gallary/> */}
+    
       
         </>
     )

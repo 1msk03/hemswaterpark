@@ -3,10 +3,11 @@ import BookForm from '../common/BookForm'
 import { IoMailOutline } from "react-icons/io5";
 import { IoTime } from 'react-icons/io5'
 import { FiPhoneCall } from "react-icons/fi";
+import Link from 'next/link';
 
 const Holiday = () => {
   return (
-    <div className='bg-secondary py-28'>
+    <div className=' py-28'>
       <div className='container mx-auto'>
         <div className='flex justify-center items-center w-full gap-10'>
             <div className='w-1/2 hidden lg:flex'>
@@ -14,12 +15,12 @@ const Holiday = () => {
             </div>
             <div className='lg:w-1/2 w-full'>
                <div className='flex flex-col gap-3'>
-               <span className='text-[16px] font-Fjalla font-medium tracking-wide text-primary'>BOOK NOW</span>
-             <h2 className='text-[32px] text-white font-Fjalla font-bold'>SPEND YOUR HOLIDAY</h2>
+               <span className='text-[16px] font-Fjalla font-medium tracking-wide text-heading'>BOOK NOW</span>
+             <h2 className='text-[32px] text-primary font-Fjalla font-bold'>SPEND YOUR HOLIDAY</h2>
              <p className='text-[16px] text-body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius tempor incididunt ut labore et dolore magna aliqua. Ut enim adiqua minim veniam quis nostrud exercitation ullamco incididunt magna aliqua veniam quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                </div>
                <div>
-                <h5 className='text-[20px] font-bold font-Fjalla tracking-wide text-white mt-5'>Opening Hours</h5>
+                <h5 className='text-[20px] font-bold font-Fjalla tracking-wide text-primary mt-5'>Opening Hours</h5>
                <div className='flex flex-col py-3 '>
 
 <div className='flex justify-between items-center border-b border-body py-3'>
@@ -44,15 +45,15 @@ const Holiday = () => {
     <div className='flex justify-start items-center gap-5'>
         <span ><IoMailOutline className='text-[40px] font-bold text-primary'/></span>
         <div className='flex flex-col gap-2'>
-        <p className='text-white text-[20px] font-medium font-Fjalla tracking-wide'>Email Address</p>
-        <p className='text-body text-[16px]'>support@domain.com</p>
+        <p className='text-heading text-[20px] font-medium font-Fjalla tracking-wide'>Email Address</p>
+        <p className='text-body text-[16px]'>Hemswaterpark@gmail.com</p>
         </div>
     </div>
     <div className='flex justify-start items-center gap-5'>
         <span ><FiPhoneCall className='text-[40px] font-bold text-primary'/></span>
         <div className='flex flex-col gap-2'>
-        <p className='text-white text-[20px] font-medium font-Fjalla tracking-wide'>Phone Number</p>
-        <p className='text-body text-[16px]'>(+62)81 1235 3368</p>
+        <p className='text-heading text-[20px] font-medium font-Fjalla tracking-wide'>Phone Number</p>
+        <Link href="tel:9352318221" className='text-body text-[16px]'>+91 9352318221</Link>
         </div>
     </div>
 </div>

@@ -10,13 +10,12 @@ module.exports = {
       container: {
         center: true,
         padding: {
-          DEFAULT: '1rem',
-        sm: '2rem',
-        lg: '3rem',
-        xl: '3rem',
-        '2xl': '4rem',
-         
-        },  
+          DEFAULT: "1rem",
+          sm: "2rem",
+          lg: "3rem",
+          xl: "3rem",
+          "2xl": "4rem",
+        },
       },
       colors: {
         primary: "#2596be",
@@ -25,15 +24,9 @@ module.exports = {
         body: "#7d8f9e",
       },
       fontFamily: {
-        Fjalla: ['Fjalla One', 'sans-serif'],
-        heebo:  ['Heebo', 'sans-serif'],
-      
-      
-        
+        Roboto: ["Roboto Slab", "sans-serif"],
       },
-      backgroundImage: {
-        
-      },
+      backgroundImage: {},
     },
   },
   plugins: [],
