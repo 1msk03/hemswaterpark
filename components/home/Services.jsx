@@ -2,8 +2,9 @@ import React from "react";
 import Services1 from "../../public/gazebo-M7GHEMR.png";
 import Services2 from "../../public/food.png";
 import Services3 from "../../public/lcoker.png";
-import Services4 from "../../public/slide.png";
+import Services4 from "../../public/hhh.jpg";
 import Services5 from "../../public/services5.jpg";
+
 
 import Image from "next/image";
 import { IoTime } from "react-icons/io5";
@@ -35,7 +36,7 @@ const Services = () => {
                   Changing Rooms
                 </h3>
                 <p className="text-[16px] text-body ">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                 {`Spacious, clean changing rooms for comfort during your visit.`}
                 </p>
               </div>
               <div className="bg-primary/20 flex flex-col justify-center items-center gap-5 p-6">
@@ -50,7 +51,7 @@ const Services = () => {
                   Food & Beverages
                 </h3>
                 <p className="text-[16px] text-body">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  {`Enjoy delicious food at our water park for a great dining experience`}
                 </p>
               </div>
               <div className="bg-primary/20 flex flex-col justify-center items-center gap-5 p-6">
@@ -65,7 +66,8 @@ const Services = () => {
                   Safety Lockers
                 </h3>
                 <p className="text-[16px] text-body">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                 {`Big-sized, secure lockers available at just ₹50
+`}
                 </p>
               </div>
               <div className="bg-primary/20 flex flex-col justify-center items-center gap-5 p-6">
@@ -75,16 +77,17 @@ const Services = () => {
                     alt=""
                     className="h-[60px] w-[60px] object-cover"
                   />
+                 
                 </div>
                 <h3 className="text-[16px] font-Fjalla font-medium tracking-wide text-heading">
-                  River Rides
+                  Parking
                 </h3>
                 <p className="text-[16px] text-body">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  {`Free parking with CCTV surveillance available for hassle-free experience`}
                 </p>
               </div>
             </div>
-            <div className="flex flex-col py-3 ">
+            {/* <div className="flex flex-col py-3 ">
               <div className="flex justify-between items-center border-b border-body py-3">
                 <h5 className=" text-heading text-[16px] font-Fjalla tracking-wide font-normal">
                   Monday - Friday
@@ -112,7 +115,7 @@ const Services = () => {
                   <p>09:00 AM - 17:00 PM</p>
                 </span>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="lg:w-1/2 w-full">
             <Image src={Services5}  alt=""/>

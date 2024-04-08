@@ -7,3 +7,11 @@ export default function Page(){
         </>
     )
 }
+
+export function generateMetadata(){
+    return {
+        title: `Hems Water Park, Jaipur! – Tickets, Entry fees, Contact info, and more`,
+        
+       
+    }
+}

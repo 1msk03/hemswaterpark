@@ -7,15 +7,18 @@ const Terms = () => {
         <div className='container mx-auto'>
         <div className='flex flex-col md:flex-row gap-5  w-full'>
             <div className=' md:w-[35%] w-full flex flex-col justify-start items-start gap-5 '>
-             <span className='text-[16px] font-Fjalla font-medium tracking-wider text-heading'>TERMS</span>
-             <h2 className='text-[32px] text-primary font-Fjalla font-bold'>{`Infique Ai Services Pvt Ltd`}</h2>
-             <p className='text-[16px] text-body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori</p>
+             <span className='text-[16px] font-Fjalla font-medium tracking-wider uppercase text-heading'>Terms for safety </span>
+             <h2 className='text-[32px] text-primary font-Fjalla font-bold'>{`Hems Water Park `}</h2>
+             <p className='text-[16px] text-body'>{`For a safe and enjoyable experience at Hems Water Park, please adhere to the following guidelines:`}</p>
              <div className='flex flex-col justify-center items-start gap-4'>
-               <div className='flex justify-start items-center w-full gap-3 text-[16px] text-body'><MdDone className='text-primary text-[20px] font-bold'/><p>Kids under 4 must wear protective swim pants</p></div>
-               <div className='flex justify-start items-center w-full gap-3 text-[16px] text-body'><MdDone className='text-primary text-[20px] font-bold'/><p>Kids under 13 must be supervised at all times by an adult aged 18 years or older</p></div>
-               <div className='flex justify-start items-center w-full gap-3 text-[16px] text-body'><MdDone className='text-primary text-[20px] font-bold'/><p>Kids under 13 may not use the adult whirlpools</p></div>
-               <div className='flex justify-start items-center w-full gap-3 text-[16px] text-body'><MdDone className='text-primary text-[20px] font-bold'/><p>Not Permitted Smoking, Coolers, Food and beverage from outside sources</p></div>
-               <div className='flex justify-start items-center w-full gap-3 text-[16px] text-body'><MdDone className='text-primary text-[20px] font-bold'/><p>Slides have a minimum height requirement of 44 inches</p></div>
+               <div className='flex justify-start items-center w-full gap-3 text-[16px] text-body'><MdDone className='text-primary text-[20px] font-bold'/><p>{`Children below 3 ft 3 inches are admitted free of charge.`}</p></div>
+               <div className='flex justify-start items-center w-full gap-3 text-[16px] text-body'><MdDone className='text-primary text-[20px] font-bold'/><p>{`Adult supervision is required at all times for children under 13.`}</p></div>
+               <div className='flex justify-start items-center w-full gap-3 text-[16px] text-body'><MdDone className='text-primary text-[20px] font-bold'/><p>{`Children under 13 are restricted from using adult whirlpools.`}</p></div>
+               <div className='flex justify-start items-center w-full gap-3 text-[16px] text-body'><MdDone className='text-primary text-[20px] font-bold'/><p>{`Smoking, bringing coolers, and outside food or beverages are prohibited.
+`}</p></div>
+               <div className='flex justify-start items-center w-full gap-3 text-[16px] text-body'><MdDone className='text-primary text-[20px] font-bold'/><p>{`Restaurant available on-site; outside food not allowed.`}</p></div>
+               <div className='flex justify-start items-center w-full gap-3 text-[16px] text-body'><MdDone className='text-primary text-[20px] font-bold'/><p>{`Nylon costume compulsory; you can wear your own or rent from us at ₹50.
+`}</p></div>
              </div>
 
             </div>

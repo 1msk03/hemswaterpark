@@ -8,30 +8,173 @@ import Faqpic from "../../public/faq.avif"
 const faqList = [
   {
     id: 1,
-    question: 'What are the opening hours of Hemswaterpark?',
-    answer: `Hemswaterpark's opening hours typically vary depending on the day of the week and the season. It's recommended to check their official website or contact them directly for the most up-to-date information on opening hours.`,
+    question: 'What are the opening hours of the hems water park?',
+    answer: `Opening hours of hems water park are from 10am to 6pm everyday.`,
   },
   {
     id: 2,
-    question: 'What attractions and facilities does Hemswaterpark offer?',
-    answer: `Hemswaterpark offers a range of attractions and facilities, including water slides, pools, wave pools, lazy rivers, children's play areas, snack bars, and picnic areas. Visitors can enjoy a variety of water-based activities suitable for all ages.`,
+    question: 'What is the admission price for adults and children?',
+    answer: (
+      <div>
+        
+
+<div className="relative overflow-x-auto">
+  <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+   
+    <tbody>
+      <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+        <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+        Adults (above 4 ft.2 inch )
+        </th>
+        <td className="px-6 py-4">
+        350/- RS (Monday-Friday)
+450/- RS (Saturday-Sunday)
+        </td>
+       
+      </tr>
+      <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+        <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+        Children (3ft 3inch - 4 ft.2 inch )
+Children under (3ft 3inch)
+       
+        </th>
+        <td className="px-6 py-4">
+        250/- RS (Monday- Sunday)
+FREE
+        </td>
+       
+      </tr>
+     
+    </tbody>
+  </table>
+</div>
+
+
+      </div>
+    ),
   },
   {
     id: 3,
-    question: 'Are there any age or height restrictions for certain rides at Hemswaterpark?',
-    answer: `Yes, some rides and attractions at Hemswaterpark may have age, height, or weight restrictions for safety reasons. It's essential to review the park's guidelines and restrictions before planning your visit, especially if you have young children or individuals with specific requirements.`,
+    question: 'Are there any discounts available for groups or season passes?',
+    answer: (
+      <div>
+        <p>YES, discounts are available on Groups, Family & Couples.
+Group of 5 members – 25%
+</p>
+<p>For Family- 20%</p>
+<p>For Couples- 10%</p>
+      </div>
+    ),
   },
   {
     id: 4,
-    question: 'Is outside food and drink allowed at Hemswaterpark?',
-    answer: `Policies regarding outside food and drink may vary at Hemswaterpark. Some parks allow visitors to bring their food and drinks, while others have restrictions or designated picnic areas. It's advisable to check the park's regulations beforehand to avoid any inconvenience.`,
+    question: 'Can we bring our own food and drinks into the hems water park?',
+    answer: `NO, outside food & drinks are not allowed in hems water park because we want you to try our delicious food.
+    `,
   },
   {
     id: 5,
-    question: 'Does Hemswaterpark offer discounts or special promotions?',
-    answer: `Hemswaterpark may offer discounts, special promotions, or package deals during certain times of the year or for specific groups such as students, seniors, or large families. Visitors can inquire about available discounts or check the park's website for any ongoing promotions before purchasing tickets.`,
+    question: 'Are swimming costumes compulsory for adults and children?',
+    answer: `NO, it’s not compulsory but you can rent them (optional RS/- 50).`,
   
   },
+  {
+    id: 6,
+    question: 'Are there height or age restrictions for certain rides and attractions?',
+    answer: `NO, there are no height restrictions but kids slides are also available in hems water park.
+    `,
+  
+  },
+  {
+    id: 7,
+    question: 'Can we rent lockers at the hems water park?',
+    answer: `YES, you can rent lockers only (at RS/- 50).`,
+  
+  },
+  {
+    id: 8,
+    question: 'Are there changing rooms and showers available?',
+    answer: `YES, changing rooms services and showers are available at hems water park.`,
+  
+  },
+  {
+    id: 9,
+    question: 'What types of water slides and attractions does the park offer?',
+    answer: `There are kids slides, adult slides, terrace rain dance and wave pool are available.`,
+  
+  },
+  {
+    id: 10,
+    question: 'What are the ticket counter timings at hems water park?',
+    answer: `Everyday the timings are from 10am – 06pm.`,
+  
+  },
+  {
+    id: 11,
+    question: 'Are there restaurants or snack bars inside the hems water park?',
+    answer: `YES, food court is available inside the hems water park serving delicious food.`,
+  
+  },
+  {
+    id: 12,
+    question: 'Can we bring our own inflatable’s or water toys?',
+    answer: `YES, you can bring your own toys.`,
+  
+  },
+  {
+    id: 13,
+    question: 'Is DJ dance available at hems water park?',
+    answer: `YES, DJ dance and terrace rain dance are available at hems water park.`,
+  
+  },
+  {
+    id: 14,
+    question: 'Are there designated smoking areas within the hems water park?',
+    answer: `NO, designated smoking areas are not available at hems water park.`,
+  
+  },
+  {
+    id: 15,
+    question: 'Can we host birthday parties or other private events at the hems water park?',
+    answer: `YES, you can host all kinds of parties such as birthday parties, anniversary parties, corporate parties, kitty parties etc.at hems water park at pre bookings.`,
+  
+  },
+  {
+    id: 16,
+    question: 'How can I purchase online tickets of hems water park?',
+    answer: `YES, you can purchase tickets online on TRIPADVISOR.
+    `,
+  
+  },
+  {
+    id: 17,
+    question: 'Is parking facility available at hems water park?',
+    answer: `YES, parking facilities are available at hems water park.`,
+  
+  },
+  {
+    id: 18,
+    question: 'How can I get in touch with hems water park?',
+    answer: (
+      <div>
+        <p>You can contact us at- <span className='text-blue-500'>9352318221</span> or you can email us at- <span className='text-blue-500'>hemswaterpark@gmail.com</span></p>
+      </div>
+    ),
+  
+  },
+  {
+    id: 19,
+    question: 'Does hems water park offer rain checks in case of inclement weather?',
+    answer: `NO, hems water park does not offer rain checks.`,
+  
+  },
+  {
+    id: 20,
+    question: 'Are pets allowed in hems water park?',
+    answer: `NO, pets are not allowed in hems water park.`,
+  
+  },
+
  
   
   
