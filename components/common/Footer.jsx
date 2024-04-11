@@ -161,8 +161,8 @@ const Footer = () => {
 <Link href={'https://www.instagram.com/hemswaterpark'} target="_blank" className="bg-[#262626] p-4 rounded-md cursor-pointer"><FaInstagram className="text-[20px]"/></Link>
 <Link href={'https://www.youtube.com/@Hemswaterpark'} target="_blank" className="bg-[#cd201f] p-4 rounded-md cursor-pointer"><FaYoutube className="text-[20px]"/></Link>
 <Link href={'https://twitter.com/KishanShar37128'} target="_blank" className="bg-[#1da1f2] p-4 rounded-md cursor-pointer"><FaTwitter className="text-[20px]"/></Link>
-<Link href={'/'} target="_blank" className="bg-[#ddff00] p-4 rounded-md cursor-pointer"><FaSnapchat className="text-[20px] text-black"/></Link>
-<Link href={'/'} target="_blank" className="bg-[#bd081c] p-4 rounded-md cursor-pointer"><FaPinterest className="text-[20px]"/></Link>
+{/* <Link href={'/'} target="_blank" className="bg-[#ddff00] p-4 rounded-md cursor-pointer"><FaSnapchat className="text-[20px] text-black"/></Link>
+<Link href={'/'} target="_blank" className="bg-[#bd081c] p-4 rounded-md cursor-pointer"><FaPinterest className="text-[20px]"/></Link> */}
 </ul>
   </div>
 </div>

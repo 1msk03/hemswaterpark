@@ -7,7 +7,7 @@ import { IoClose } from "react-icons/io5";
 
 const MobileNav = ({ onLinkClick }) => {
   const [isCoursesDropdownOpen, setCoursesDropdownOpen] = useState(false);
-  const [isServicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+
 
   const handleLinkClick = () => {
     if (onLinkClick) {
@@ -23,11 +23,7 @@ const MobileNav = ({ onLinkClick }) => {
     setServicesDropdownOpen(false);
   };
 
-  const handleServicesDropdownToggle = () => {
-    setServicesDropdownOpen(!isServicesDropdownOpen);
-
-    setCoursesDropdownOpen(false);
-  };
+ 
   return (
     <div className=" bg-white z-50 top-0   py-7 fixed w-full  lg:py-0 shadow">
       <div className="container mx-auto">
@@ -39,33 +35,98 @@ const MobileNav = ({ onLinkClick }) => {
           >
             Home
           </Link>
+          <div 
+            onClick={handleCoursesDropdownToggle}
+        data-dropdown-toggle="servicesDropdown"
+        className="text-black flex items-center font-medium text-[17px]"
+       >
+       About
+        <svg
+         onClick={handleCoursesDropdownToggle}
+          className={`w-2.5 h-2.5 ms-3 ${
+              isCoursesDropdownOpen ? "rotate-180" : ""
+          }`}
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m1 1 4 4 4-4"
+          />
+        </svg>
+       </div>
+       
+       <div
+                  id="servicesDropdown"
+                  className={`z-10 ${
+                      isCoursesDropdownOpen ? "block" : "hidden"
+                  }  divide-y divide-gray-100`}
+                >
+                  <ul
+                    class=" flex flex-col justify-start items-start gap-3  py-2 text-sm text-gray-700 dark:text-gray-200"
+                    aria-labelledby="servicesDropdown"
+                  >
+                    
+                                <Link
+                                       onClick={handleLinkClick}
+                                       href={'/information'}
+                                 
+                                  className=" block border-b border-gray-100  text-[14px]  font-medium text-gray-500 hover:text-black md:mx-2"
+                                >
+                          Information
+                                </Link>
+                                <Link
+                                       onClick={handleLinkClick}
+                                       href={'/blog'}
+                                
+                                  className=" block border-b border-gray-100  text-[14px]  font-medium text-gray-500 hover:text-black md:mx-2"
+                                >
+                               Blog
+                                </Link>
+                                <Link
+                                       onClick={handleLinkClick}
+                                       href={'/faq'}
+                                
+                                  className=" block border-b border-gray-100  text-[14px]  font-medium text-gray-500 hover:text-black md:mx-2"
+                                >
+                               FAQs
+                                </Link>
+                                
+                             
+                  </ul>
+                </div>
           <Link
-            href={"/"}
+       href={'/attractions'}
             onClick={handleLinkClick}
             className="text-[17px] font-medium"
           >
-            Services
+         Attractions
           </Link>
           <Link
-            href={"/services"}
+        href={'/events-and-offers'}
             onClick={handleLinkClick}
             className="text-[17px] font-medium"
           >
-            Booking
+        Events & Offers
           </Link>
           <Link
-            href={"/booking"}
+         href={'/contact'}
             onClick={handleLinkClick}
             className="text-[17px] font-medium"
           >
-            Blog
+         Contact
           </Link>
           <Link
-            href={"/contact"}
+        href={'/book'}
             onClick={handleLinkClick}
             className="text-[17px] font-medium"
           >
-            Contact
+           Book Tickets
           </Link>
         
 

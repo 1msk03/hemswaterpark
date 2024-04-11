@@ -70,15 +70,19 @@ const Ticket = () => {
               <div className="flex flex-col justify-center items-start gap-4 pt-6">
                 <span className="flex justify-start items-center gap-3 text-[16px]  ">
                   <MdDone className="text-heading text-[20px] font-bold" />
-                  <p>Free Soft Drinks</p>
+                  <p>{`Free parking`}</p>
                 </span>
                 <span className="flex justify-start items-center gap-3 text-[16px] ">
                   <MdDone className="text-heading text-[20px] font-bold" />
-                  <p>Get Four Lockers</p>
+                  <p>{`Delicious food (extra charges)`}</p>
                 </span>
                 <span className="flex justify-start items-center gap-3 text-[16px]">
                   <MdDone className="text-heading text-[20px] font-bold" />
-                  <p>Free Four Towels</p>
+                  <p>{`locker 50/- (optional)`}</p>
+                </span>
+                <span className="flex justify-start items-center gap-3 text-[16px]">
+                  <MdDone className="text-heading text-[20px] font-bold" />
+                  <p>{`costume 50/- (optional)`}</p>
                 </span>
               </div>
               <button className="bg-primary text-white px-6 py-3 text-[16px] font-bold tracking-wide mt-7">
@@ -102,15 +106,19 @@ const Ticket = () => {
               <div className="flex flex-col justify-center items-start gap-4 pt-6">
                 <span className="flex justify-start items-center gap-3 text-[16px]  ">
                   <MdDone className="text-heading text-[20px] font-bold" />
-                  <p>Free Soft Drinks</p>
+                  <p>{`Kids Below 3ft 3inch (Free entry)`}</p>
                 </span>
                 <span className="flex justify-start items-center gap-3 text-[16px] ">
                   <MdDone className="text-heading text-[20px] font-bold" />
-                  <p>Get Four Lockers</p>
+                  <p>{`Kids pool`}</p>
                 </span>
                 <span className="flex justify-start items-center gap-3 text-[16px]">
                   <MdDone className="text-heading text-[20px] font-bold" />
-                  <p>Free Four Towels</p>
+                  <p>{`Kids slides`}</p>
+                </span>
+                <span className="flex justify-start items-center gap-3 text-[16px]">
+                  <MdDone className="text-heading text-[20px] font-bold" />
+                  <p>{`Safety features`}</p>
                 </span>
               </div>
               <button className="bg-primary text-white px-6 py-3 text-[16px] font-bold tracking-wide mt-7">
