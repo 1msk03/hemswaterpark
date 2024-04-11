@@ -108,7 +108,7 @@ const Services = () => {
               </div>
               <div className="flex justify-between items-center border-b border-body py-3">
                 <h5 className=" text-heading text-[16px] font-Fjalla tracking-wide font-normal">
-                  Holiday
+                  Holidays
                 </h5>
                 <span className="flex justify-start items-center gap-2 text-body text-[16px] font-Fjalla tracking-wide font-normal">
                   <IoTime className="text-primary" />
