@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    width: 100%;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 55px;
+    background-color: #f7bc27;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: all 0.3s;
+    border: none;
+  }
+  .btn:hover {
+    background-color: #ca9307;
+  }
