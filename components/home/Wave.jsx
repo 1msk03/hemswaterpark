@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import Slider1 from "../../public/slider.jpg";
-import Slider2 from "../../public/hero1.png";
-import Slider3 from "../../public/hero2.png";
-import Slider4 from "../../public/hero3.png";
+import Slider1 from "../../public/wave/wave1.png";
+import Slider2 from "../../public/wave/wave2.png";
+import Slider3 from "../../public/wave/wave3.png";
+import Slider4 from "../../public/wave/wave4.png";
 
 const listData = [
   {
@@ -39,7 +39,7 @@ const Wave = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5  pt-8">
           {listData.map((item, index) => {
             return (
-              <div
+              <Link  href={`/services/${item.id}`}
                 key={index}
                 className=" group relative items-center justify-center overflow-hidden rounded-md cursor-pointer"
               >
@@ -51,15 +51,15 @@ const Wave = () => {
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-b  group-hover:from-primary/70 group-hover:via-primary/60 group-hover:to-primary/70 rounded-md"></div>
-                <div className="absolute  inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[45%]  group-hover:translate-y-0 rounded-md">
-                  <Link
-                    href={`/services/${item.id}`}
+                <div className="absolute  inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[45%]  ">
+                  <div
+                   
                     className="text-white font-Fjalla mb-4 font-bold text-[20px] tracking-wider"
                   >
                     {item.title}
-                  </Link>
+                  </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import Gallary1 from "../../public/gallary1.jpg";
+import Gallary1 from "../../public/services/ser1.jpeg";
+import Gallary2 from "../../public/services/ser2.jpeg";
+import Gallary3 from "../../public/services/ser3.jpeg";
 
 const list = [
   {
@@ -9,11 +11,11 @@ const list = [
   },
   {
     title: "Kids & Family Pools",
-    img: Gallary1,
+    img: Gallary2,
   },
   {
     title: "3rd & 4th floor Body Slides",
-    img: Gallary1,
+    img: Gallary3,
   },
   {
     title: "Kids Slides",
@@ -21,11 +23,11 @@ const list = [
   },
   {
     title: "Jaipur's Best Terrace Rain Dance",
-    img: Gallary1,
+    img: Gallary2,
   },
   {
     title: "Dining Area & Food Court",
-    img: Gallary1,
+    img: Gallary3,
   },
 ];
 

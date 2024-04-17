@@ -1,6 +1,8 @@
 "use client"
 import { useState } from "react";
 import Link from "next/link";
+import {  toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 import React, { useRef } from "react";
 const BookForm = () => {
@@ -16,16 +18,24 @@ const BookForm = () => {
   
     
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^\d{10}$/; 
   
-   
     if (!emailRegex.test(email)) {
-      alert("Please enter a valid email address.");
+      toast.error("Please enter a valid email address.");
       return;
     }
   
+    if (!phoneRegex.test(phone)) {
+      toast.error("Please enter a valid 10-digit phone number.");
+      return;
+    }
+    
+   
+  
     emailjs.sendForm('service_uq0vtgy', 'template_eq68wkc', form.current, 'wudLZeSOTd66m7lLK')
-      .then((result) => {
-        alert("Message sent successfully!");
+    .then(
+      (result) => {
+        toast.success("Message sent successfully!");
   
         
         setName('');
@@ -33,7 +43,7 @@ const BookForm = () => {
         setGuest('');
         setPhone('');
       }, (error) => {
-        alert("Error sending message. Please try again.");
+        toast.error("Error sending message. Please try again.");
       });
   };
   return (

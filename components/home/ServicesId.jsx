@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import WaveModel1 from "../../public/tsunami-2.jpg";
+import WaveModel1 from "../../public/services/ser1.jpeg";
+import WaveModel2 from "../../public/services/ser2.jpeg";
+import WaveModel3 from "../../public/services/ser3.jpeg";
+
 import { FaLocationDot } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
 import { IoMailSharp } from "react-icons/io5";
@@ -24,14 +27,14 @@ const ServicesId = () => {
               </div>
               <div>
                 <Image
-                  src={WaveModel1}
+                  src={WaveModel2}
                   alt=""
                   className=" w-full h-full object-contain"
                 />
               </div>
               <div>
                 <Image
-                  src={WaveModel1}
+                  src={WaveModel3}
                   alt=""
                   className=" w-full h-full object-contain"
                 />

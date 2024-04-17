@@ -1,10 +1,48 @@
-import Link from 'next/link';
-import React from 'react'
+"use client"
+import { useState } from "react";
+import Link from "next/link";
+import React, { useRef } from "react";
+import {  toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser";
 import { GrMapLocation } from "react-icons/gr";
 import { IoMailOutline } from "react-icons/io5";
 import { FaFacebookF, FaTwitter , FaLinkedinIn, FaInstagram, FaYoutube   } from "react-icons/fa";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const phoneRegex = /^\d{10}$/; 
+  
+   
+  
+    if (!phoneRegex.test(phone)) {
+      toast.error("Please enter a valid 10-digit phone number.");
+      return;
+    }
+   
+  
+    emailjs.sendForm('service_uq0vtgy', 'template_eq68wkc', form.current, 'wudLZeSOTd66m7lLK')
+    .then(
+      (result) => {
+        toast.success("Message sent successfully!");
+  
+        
+        setName('');
+        setPhone('');
+        setMessage('');
+      }, (error) => {
+        toast.error("Error sending message. Please try again.");
+      });
+  };
   return (
     <div className='bg-slate-100 py-28'>
    <div className='container mx-auto'>
@@ -54,21 +92,40 @@ Drop Your Mail</p>
           </div>
         </div>
         <div className='lg:w-1/2 w-full '>
-        <form className='flex bg-white  flex-col justify-start  gap-5 p-10'>
+        <form ref={form}
+              onSubmit={sendEmail} className='flex bg-white  flex-col justify-start  gap-5 p-10'>
             <div>
-              <input type='text' placeholder='Your Name*'  className='p-4 w-full outline-none border'/>
+              <input
+               name="user_name"
+           
+               value={name}
+               onChange={(e) => setName(e.target.value)}
+               required
+              type='text' placeholder='Your Name*'  className='p-4 w-full outline-none border'/>
             </div>
             <div>
-              <input type='text' placeholder='Your Phone No*'  className='p-4 w-full outline-none border'/>
+              <input 
+               name="user_phone"
+            
+               value={phone}
+               onChange={(e) => setPhone(e.target.value)}
+               required
+              type='text' placeholder='Your Phone No*'  className='p-4 w-full outline-none border'/>
             </div>
-            <div>
+            {/* <div>
               <input type='text' placeholder='Your Subject*'  className='p-4 w-full outline-none border'/>
-            </div>
+            </div> */}
             <div>
-              <textarea type='text' placeholder='Message*'  className='p-4 w-full outline-none border'/>
+              <textarea
+               name="message"
+            
+               value={message}
+               onChange={(e) => setMessage(e.target.value)}
+               required
+              type='text' placeholder='Message*'  className='p-4 w-full outline-none border'/>
             </div>
 <div className='flex justify-start items-start'>
-<button className='bg-primary text-white px-6 py-3 text-[16px] font-bold tracking-wide uppercase'>SEND MESSAGE</button>
+<button type="submit" className='bg-primary text-white px-6 py-3 text-[16px] font-bold tracking-wide uppercase'>SEND MESSAGE</button>
 </div>
            </form>
         </div>

@@ -122,7 +122,7 @@ const MobileNav = ({ onLinkClick }) => {
          Contact
           </Link>
           <Link
-        href={'/book'}
+        href={'/book-tickets'}
             onClick={handleLinkClick}
             className="text-[17px] font-medium"
           >

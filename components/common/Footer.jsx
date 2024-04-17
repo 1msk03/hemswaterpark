@@ -62,7 +62,7 @@ const Footer = () => {
                 </Link>
 
                 <Link
-                  href={"/book"}
+                  href={"/book-tickets"}
                   className="text-[16px] text-heading hover:text-primary duration-500 font-heebo tracking-wide "
                 >
                   Book Tickets

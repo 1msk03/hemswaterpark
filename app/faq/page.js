@@ -7,3 +7,11 @@ export default function Page(){
         </>
     )
 }
+export function generateMetadata(){
+    return {
+        title: "Explore Hems Water Park FAQs | All Your Questions Answered!",
+        description:
+          ` Discover all about Hems Water Park FAQs - Get answers to commonly asked questions about our attractions, tickets, timings, and more!`,
+          
+    }
+  }

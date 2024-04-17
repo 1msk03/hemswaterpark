@@ -6,7 +6,8 @@ import { FaPlay } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
-import HeroImage from '../../public//hero1.png'
+import HeroImage from '../../public/hero/hero.png'
+
 
 
 const HeroSection = () => {
@@ -14,7 +15,7 @@ const HeroSection = () => {
     // dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true, 
     autoplaySpeed: 2000,
@@ -28,7 +29,7 @@ const HeroSection = () => {
       <div className='wave wave2'></div>
       <div className='wave wave3'></div>
       <div className='wave wave4'></div> */}
-        <div  className={`  flex items-center justify-center   `}>
+        <div  className={`     `}>
       {/* <div className='bg-[hsla(12,38%,51%,0)] h-full w-full'>
   
       <div className='container h-full mx-auto'>
@@ -44,26 +45,22 @@ const HeroSection = () => {
           </div>
 
           <div className='w-full hidden lg:flex  lg:w-1/2 '>
-          <Slider {...settings} className="">
-      <div >
-      <Image src={Slider1} className="w-[280px] h-[400px] object-cover rounded-md"/>
-      </div>
-      <div>
-      <Image src={Slider2} className="w-[280px] h-[400px] object-cover rounded-md"/>
-      </div>
-      <div>
-      <Image src={Slider3} className="w-[280px] h-[400px] object-cover rounded-md"/>
-      </div>
-      <div>
-      <Image src={Slider4} className="w-[280px] h-[400px] object-cover rounded-md"/>
-      </div>
-     
-    </Slider>
+       
           </div>
         </div>
       </div>
       </div> */}
-    <Image src={HeroImage} alt="Hero Background" className="w-full h-full object-contain"/>
+    {/* <Image src={HeroImage} alt="Hero Background" className="w-full h-full object-cover"/> */}
+    <Slider {...settings} className="">
+      <div >
+      <Image src={HeroImage} className=" h-full w-full object-cover"/>
+      </div>
+     
+      <div >
+      <Image src={HeroImage} className=" h-full w-full object-cover"/>
+      </div>
+     
+    </Slider>
     </div>
     </section>
   </div>

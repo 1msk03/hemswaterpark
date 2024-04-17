@@ -16,3 +16,11 @@ export default function Page(){
         </div>
     )
 }
+export function generateMetadata(){
+  return {
+      title: "Dive, Swim and Play All Day!! : Best of Hems Water Park Jaipur!",
+      description:
+        `Explore Hems Water Park Jaipur's top attractions: terrace rain dance, wave pool thrills, family-friendly fun, thrilling slides, and mouthwatering dining options. Dive into excitement today!`,
+        
+  }
+}

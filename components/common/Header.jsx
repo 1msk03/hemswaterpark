@@ -70,7 +70,7 @@ const Header = () => {
         <Link href={'/events-and-offers'} className='  capitalize tracking-wider hover:text-primary duration-300'>Events & Offers</Link>
      
         <Link href={'/contact'} className=' capitalize tracking-wider hover:text-primary duration-300'>Contact</Link>
-        <Link href={'/book'} className='  capitalize tracking-wider hover:text-primary duration-300'>Book Tickets</Link>
+        <Link href={'/book-tickets'} className='  capitalize tracking-wider hover:text-primary duration-300'>Book Tickets</Link>
         </div>
         <div className='hidden md:flex justify-center items-center gap-5'>
           <span className='bg-secondary/15 cursor-pointer hover:bg-primary duration-500 transition-transform  ease-in-out  p-4 rounded-full group'>  <Link href={'/'}><LuPhoneCall className='text-primary group-hover:text-white  duration-500 text-[24px]'/></Link></span>
