@@ -17,7 +17,7 @@ const Header = () => {
     setMobileNavOpen(false);
   };
   return (
-    <div className='h-[80px] bg-white'>
+    <div className='h-[80px] bg-white shadow-lg'>
    <div className='container mx-auto'>
     <div className='flex justify-between items-center '>
         <Link href={'/'}>

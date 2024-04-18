@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 import { MdDone } from "react-icons/md";
 
@@ -23,8 +24,10 @@ const Terms = () => {
 
             </div>
             <div className=' md:w-[65%] w-full flex '>
-                <div className='w-1/2 bg-secondary flex flex-col justify-center   items-center'>
-                  <h3 className='text-[22px] font-bold text-white'>Image</h3>
+                <div   className={`bg-[url('/hero/hero.png')]  bg-cover bg-center text-white w-1/2 `}>
+                 <div>
+               
+                 </div>
                 </div>
                 <div className='w-1/2  flex flex-col justify-center    items-center'>
                 <iframe

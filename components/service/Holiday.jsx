@@ -39,7 +39,7 @@ const Holiday = () => {
         <span ><IoMailOutline className='text-[40px] font-bold text-primary'/></span>
         <div className='flex flex-col gap-2'>
         <p className='text-heading text-[20px] font-medium font-Fjalla tracking-wide'>Email Address</p>
-        <p className='text-body text-[16px]'>Hemswaterpark@gmail.com</p>
+        <Link href="mailto:Hemswaterpark@gmail.com" className='text-body text-[16px] '>Hemswaterpark@gmail.com</Link>
         </div>
     </div>
     <div className='flex justify-start items-center gap-5'>

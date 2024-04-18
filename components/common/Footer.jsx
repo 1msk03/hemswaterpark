@@ -43,7 +43,7 @@ const Footer = () => {
                   Home
                 </Link>
                 <Link
-                  href={"/"}
+                     href={'/information'}
                   className="text-[16px] text-heading hover:text-primary duration-500 font-heebo tracking-wide "
                 >
                   Information
@@ -67,12 +67,7 @@ const Footer = () => {
                 >
                   Book Tickets
                 </Link>
-                <Link
-                  href={"/blog"}
-                  className="text-[16px] text-heading hover:text-primary duration-500 font-heebo tracking-wide "
-                >
-                  Blog
-                </Link>
+              
               </ul>
             </div>
             <div className="flex    flex-col justify-center items-start gap-3">
@@ -81,34 +76,35 @@ const Footer = () => {
               </h4>
               <ul className="flex flex-col justify-center items-start gap-2">
                 <Link
-                  href={`/`}
+                  href={`/privacy-policy`}
                   className="text-[16px] text-heading hover:text-primary duration-500 font-heebo tracking-wide "
                 >
                   Privacy Policy
                 </Link>
                 <Link
-                  href={`/`}
+                  href={`/terms-and-conditions`}
                   className="text-[16px] text-heading hover:text-primary duration-500 font-heebo tracking-wide "
                 >
                   Terms and Conditions
                 </Link>
+              
                 <Link
-                  href={`/`}
+                  href={`/refund-and-cancellation-policy`}
                   className="text-[16px] text-heading hover:text-primary duration-500 font-heebo tracking-wide "
                 >
-                  Disclaimer
-                </Link>
-                <Link
-                  href={`/`}
-                  className="text-[16px] text-heading hover:text-primary duration-500 font-heebo tracking-wide "
-                >
-                  Support
+               Refund and Cancellation Policy
                 </Link>
                 <Link
                   href={`/faq`}
                   className="text-[16px] text-heading hover:text-primary duration-500 font-heebo tracking-wide "
                 >
                   FAQ
+                </Link>
+                <Link
+                  href={"/blog"}
+                  className="text-[16px] text-heading hover:text-primary duration-500 font-heebo tracking-wide "
+                >
+                  Blog
                 </Link>
               </ul>
             </div>
@@ -128,7 +124,7 @@ const Footer = () => {
                   </div>
                   <div className="flex justify-center items-center gap-3">
                     <AiOutlineMail className="text-heading text-[20px]" />
-                    <span className="text-heading">Hemswaterpark@gmail.com</span>
+                    <Link href="mailto:Hemswaterpark@gmail.com" className="text-heading">Hemswaterpark@gmail.com</Link>
                   </div>
                   <div className="flex justify-center items-center gap-3">
                     <IoCallOutline className="text-heading text-[20px]" />

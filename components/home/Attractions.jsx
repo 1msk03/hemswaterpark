@@ -1,8 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import Gallary1 from "../../public/services/ser1.jpeg";
-import Gallary2 from "../../public/services/ser2.jpeg";
-import Gallary3 from "../../public/services/ser3.jpeg";
+import Gallary2 from "../../public/attration/faimaly.png";
+import Gallary1 from "../../public/attration/pool.png";
+import Gallary3 from "../../public/attration/floor.png";
+import Gallary4 from "../../public/attration/kids.png";
+import Gallary5 from "../../public/attration/rain.png";
+import Gallary6 from "../../public/attration/Dining.png";
 
 const list = [
   {
@@ -19,15 +22,15 @@ const list = [
   },
   {
     title: "Kids Slides",
-    img: Gallary1,
+    img: Gallary4,
   },
   {
     title: "Jaipur's Best Terrace Rain Dance",
-    img: Gallary2,
+    img: Gallary5,
   },
   {
     title: "Dining Area & Food Court",
-    img: Gallary3,
+    img: Gallary6,
   },
 ];
 
@@ -48,7 +51,7 @@ const Attractions = () => {
             return (
               <div key={index} className=" border-b border-b-black">
                 <div>
-                  <Image src={item.img} alt="" className="object-contain" />
+                  <Image src={item.img} alt="" className="object-cover" />
                 </div>
                 <h5 className="text-[20px] font-bold py-4 px-2">
                   {item.title}

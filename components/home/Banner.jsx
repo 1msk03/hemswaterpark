@@ -21,7 +21,7 @@ const Banner = () => {
               </h2>
             </div>
             <div className="flex flex-col md:flex-row   gap-6">
-              <Link href={'/book'} className="bg-white text-primary px-6 py-3 text-[16px] font-bold tracking-wide">
+              <Link   href={"/book-tickets"} className="bg-white text-primary px-6 py-3 text-[16px] font-bold tracking-wide">
                 BOOK NOW
               </Link>
               <Link

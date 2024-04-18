@@ -95,7 +95,7 @@ const Reviews = () => {
         <Slider {...settings} className="gap-5">
     {
       reviewsData.map((item, index)=>{
-        return    <div className="flex justify-center items-center gap-6" key={`${index}`}>
+        return    <div key={index} className="flex justify-center items-center gap-6">
             <div className="card">
         <div className="header">
           <div className="image" >

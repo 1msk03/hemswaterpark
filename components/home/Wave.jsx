@@ -39,7 +39,7 @@ const Wave = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5  pt-8">
           {listData.map((item, index) => {
             return (
-              <Link  href={`/services/${item.id}`}
+              <Link  href={`/fun-and-enjoyment/${item.id}`}
                 key={index}
                 className=" group relative items-center justify-center overflow-hidden rounded-md cursor-pointer"
               >

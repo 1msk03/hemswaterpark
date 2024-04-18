@@ -53,11 +53,11 @@ const HeroSection = () => {
     {/* <Image src={HeroImage} alt="Hero Background" className="w-full h-full object-cover"/> */}
     <Slider {...settings} className="">
       <div >
-      <Image src={HeroImage} className=" h-full w-full object-cover"/>
+      <Image src={HeroImage} alt="hero" className=" h-full w-full object-cover"/>
       </div>
      
       <div >
-      <Image src={HeroImage} className=" h-full w-full object-cover"/>
+      <Image src={HeroImage} alt="hero" className=" h-full w-full object-cover"/>
       </div>
      
     </Slider>

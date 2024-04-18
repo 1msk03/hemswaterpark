@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { MdDone } from "react-icons/md";
 
@@ -85,9 +86,9 @@ const Ticket = () => {
                   <p>{`costume 50/- (optional)`}</p>
                 </span>
               </div>
-              <button className="bg-primary text-white px-6 py-3 text-[16px] font-bold tracking-wide mt-7">
+              <Link     href={"/book-tickets"} className="bg-primary text-white px-6 py-3 text-[16px] font-bold tracking-wide mt-7">
                 BOOK NOW
-              </button>
+              </Link>
             </div>
             <div className="  md:w-[400px] w-[320px] py-5 px-5 md:py-5 bg-secondary rounded-md shadow-lg  flex flex-col justify-center items-center">
               <h3 className="text-[24px] font-Fjalla font-[700]">
@@ -121,9 +122,9 @@ const Ticket = () => {
                   <p>{`Safety features`}</p>
                 </span>
               </div>
-              <button className="bg-primary text-white px-6 py-3 text-[16px] font-bold tracking-wide mt-7">
+              <Link     href={"/book-tickets"} className="bg-primary text-white px-6 py-3 text-[16px] font-bold tracking-wide mt-7">
                 BOOK NOW
-              </button>
+              </Link>
             </div>
           </div>
         </div>

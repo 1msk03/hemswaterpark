@@ -67,7 +67,7 @@ const BookForm = () => {
                value={phone}
                onChange={(e) => setPhone(e.target.value)}
                required
-              type='text' placeholder='Your Phone*'  className='p-4 w-full outline-none'/>
+              type='text' placeholder='Your Phone*'  className='p-4  w-full outline-none'/>
               <input
             
                name="user_email"
