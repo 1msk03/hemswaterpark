@@ -14,7 +14,7 @@ import { IoCall } from "react-icons/io5";
 import { IoMailSharp } from "react-icons/io5";
 import Link from "next/link";
 
-const ServicesId = () => {
+const ServicesId = ({title}) => {
   const [name, setName] = useState("");
 
   const [email, setEmail] = useState("");
@@ -55,7 +55,7 @@ const ServicesId = () => {
     <div className="bg-slate-100 py-20">
       <div className="container mx-auto">
         <div>
-          <h3 className="text-[40px] font-bold pb-5">Slides & Pools</h3>
+          <h3 className="text-[40px] font-bold pb-5">{title}</h3>
         </div>
         <div className="flex flex-col lg:flex-row justify-center items-start gap-10">
           <div className="lg:w-[65%] w-full">

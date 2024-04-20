@@ -9,18 +9,22 @@ const listData = [
   {
     title: "Slides & Pools",
     img: Slider1,
+    url: '/slides-and-pools'
   },
   {
     title: "Book Tickets",
     img: Slider2,
+    url: '/book-tickets'
   },
   {
     title: "Memories",
     img: Slider3,
+    url: '/memories'
   },
   {
     title: "Special Offers",
     img: Slider4,
+    url: '/events-and-offers'
   },
 ];
 
@@ -39,7 +43,7 @@ const Wave = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5  pt-8">
           {listData.map((item, index) => {
             return (
-              <Link  href={`/fun-and-enjoyment/${item.id}`}
+              <Link  href={item.url}
                 key={index}
                 className=" group relative items-center justify-center overflow-hidden rounded-md cursor-pointer"
               >

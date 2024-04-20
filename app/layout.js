@@ -28,6 +28,17 @@ export default function RootLayout({ children }) {
             rel="stylesheet"
           />
         </div>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SFNJB2HQ56"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SFNJB2HQ56"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-SFNJB2HQ56');
+          `}
+        </script>
       </head>
       <body className="font-Roboto bg-slate-100">
         <TopNav />

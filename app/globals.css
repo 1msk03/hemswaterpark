@@ -215,6 +215,11 @@
   width: 4rem;
   border-radius: 9999px;
   object-fit: cover;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid darkorange;
  
 }
 

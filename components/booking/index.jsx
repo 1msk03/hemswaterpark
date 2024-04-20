@@ -12,7 +12,7 @@ const BookingPage = () => {
             <div className='flex justify-center items-center gap-3'>
                 <Link href={'/'}  className='hover:text-primary duration-300 transition-all'>Home</Link>
                 <span><FaChevronRight className='text-primary'/></span>
-                <span>Booking</span>
+                <span>Book-Tickets</span>
             </div>
      
         </div>

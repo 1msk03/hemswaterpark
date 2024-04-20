@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
 import HeroImage from '../../public/hero/hero.png'
-
+import HeroImage1 from '../../public/hero/hero1.png'
 
 
 const HeroSection = () => {
@@ -53,7 +53,7 @@ const HeroSection = () => {
     {/* <Image src={HeroImage} alt="Hero Background" className="w-full h-full object-cover"/> */}
     <Slider {...settings} className="">
       <div >
-      <Image src={HeroImage} alt="hero" className=" h-full w-full object-cover"/>
+      <Image src={HeroImage1} alt="hero" className=" h-full w-full object-cover"/>
       </div>
      
       <div >

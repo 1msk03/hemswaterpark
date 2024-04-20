@@ -9,37 +9,43 @@ const reviewsData = [
 
     title: 'Rohan S.',
     des: `Absolutely loved the water park! It's clean, well-maintained, and offers a variety of fun rides. A perfect day out for families!`,
-    img: ''
+    img: '',
+    heading: 'R'
   },
   {
 
     title: 'Priya M.',
     des: `The slides were thrilling, the staff was friendly, and the overall atmosphere was fantastic. Highly recommend!`,
-    img: ''
+    img: '',
+    heading: 'P'
   },
   {
 
     title: 'Amit J.',
     des: `A great place to beat the heat! The facilities are top-notch, and the food options are delicious. Can't wait to visit again!`,
-    img: ''
+    img: '',
+    heading: 'A'
   },
   {
 
     title: 'Anjali K.',
     des: `Safety measures are well in place. I felt comfortable letting my kids roam around. Kudos to the management!`,
-    img: ''
+    img: '',
+    heading: 'A'
   },
   {
 
     title: 'Nikhil P.',
     des: `The changing rooms were clean, and the lockers were spacious. Everything you need for a comfortable day at the water park.`,
-    img: ''
+    img: '',
+    heading: 'N'
   },
   {
 
     title: 'Ritu L',
     des: `Reasonably priced and worth every penny! The wave pool was my favorite. Will definitely be coming back soon.`,
-    img: ''
+    img: '',
+    heading: 'R'
   },
 ]
 
@@ -95,11 +101,12 @@ const Reviews = () => {
         <Slider {...settings} className="gap-5">
     {
       reviewsData.map((item, index)=>{
-        return    <div key={index} className="flex justify-center items-center gap-6">
-            <div className="card">
+        return    <div key={index} className="flex justify-start items-start px-5">
+            <div className="card h-[250px] ">
         <div className="header">
           <div className="image" >
-          <Image src={'/avtar.png'} width={70} height={70} alt="" className=" rounded-full object-contain"/>
+            <h3 className="text-[40px] text-primary font-bold">{item.heading}</h3>
+          {/* <Image src={'/avtar.png'} width={70} height={70} alt="" className=" rounded-full object-contain"/> */}
           </div>
           <div>
           <p className="name">{item.title}</p>

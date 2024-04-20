@@ -11,7 +11,7 @@ const Chat = () => {
   };
 
   return (
-    <div className="fixed lg:top-12 bottom-5 right-4 m-3 z-50 overflow-hidden">
+    <div className="fixed  bottom-5 right-4 m-3 z-50 overflow-hidden">
       <div onClick={handleWhatsAppClick} className="no-underline overflow-hidden cursor-pointer">
        
         <Image src={'/WhatsApp.svg.webp'} width={50} height={50} alt='' />

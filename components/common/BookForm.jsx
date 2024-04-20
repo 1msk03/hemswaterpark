@@ -49,7 +49,7 @@ const BookForm = () => {
   return (
     <div>
        <form  ref={form}
-              onSubmit={sendEmail} className='flex bg-[rgba(113,248,237,0.37)]  w-[500px] flex-col justify-start  gap-5 p-10'>
+              onSubmit={sendEmail} className='flex bg-[rgba(113,248,237,0.37)]  md:w-[500px] w-full flex-col justify-start  gap-5 p-10'>
             <div>
               <input
            
@@ -60,7 +60,7 @@ const BookForm = () => {
                required
               type='text' placeholder='Your Name*'  className='p-4 w-full outline-none'/>
             </div>
-            <div className='flex justify-center items-center gap-4'>
+            <div className='flex flex-col lg:flex-row justify-center items-center gap-4'>
               <input
                name="user_phone"
             

@@ -9,14 +9,14 @@ const Holiday = () => {
   return (
     <div className=' py-28'>
       <div className='container mx-auto'>
-        <div className='flex justify-center items-center w-full gap-10'>
-            <div className='w-1/2 hidden lg:flex'>
+        <div className='flex flex-col lg:flex-row justify-center items-center w-full gap-10'>
+            <div className='lg:w-1/2 w-full lg:flex'>
                 <BookForm/>
             </div>
             <div className='lg:w-1/2 w-full'>
                <div className='flex flex-col gap-3'>
                <span className='text-[16px] font-Fjalla font-medium tracking-wide text-heading'>BOOK NOW</span>
-             <h2 className='text-[32px] text-primary font-Fjalla font-bold'>Make Your Holiday Unforgettable!
+             <h2 className='lg:text-[32px] text-[20px] text-primary font-Fjalla font-bold'>Make Your Holiday Unforgettable!
 </h2>
              <p className='text-[16px] text-body'>{`Experience a memorable family holiday at our water park! Enjoy thrilling body slides, wave pool excitement, and a fun-filled DJ dance. With delicious food options, free parking, CCTV surveillance, and safety lockers, we offer complete enjoyment for all. Book now for an unforgettable FUN adventure!`}</p>
                </div>
@@ -34,7 +34,7 @@ const Holiday = () => {
        </div>
                </div>
 
-<div className='flex flex-col md:flex-row justify-between md:items-center items-start mt-6'>
+<div className='flex flex-col md:flex-row justify-between md:items-center gap-5 md:gap-0 items-start mt-6'>
     <div className='flex justify-start items-center gap-5'>
         <span ><IoMailOutline className='text-[40px] font-bold text-primary'/></span>
         <div className='flex flex-col gap-2'>
